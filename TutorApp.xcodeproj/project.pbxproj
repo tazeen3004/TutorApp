@@ -12,9 +12,12 @@
 		2F4841A41E86F25200283105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4841A21E86F25200283105 /* Main.storyboard */; };
 		2F4841A61E86F25200283105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4841A51E86F25200283105 /* Assets.xcassets */; };
 		2F4841A91E86F25200283105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4841A71E86F25200283105 /* LaunchScreen.storyboard */; };
+		2F4841B11E86F26C00283105 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F4841B01E86F26C00283105 /* GoogleService-Info.plist */; };
+		B1FB1D3EBB510A3AC34877C6 /* Pods_TutorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F43D0BE3F16B956D9E5584 /* Pods_TutorApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C1EE07E4E47618BBAAC78A /* Pods-TutorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TutorApp/Pods-TutorApp.release.xcconfig"; sourceTree = "<group>"; };
 		2F48419B1E86F25200283105 /* TutorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F48419E1E86F25200283105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F4841A01E86F25200283105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		2F4841A51E86F25200283105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4841A81E86F25200283105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F4841AA1E86F25200283105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4841B01E86F26C00283105 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95F43D0BE3F16B956D9E5584 /* Pods_TutorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TutorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03123E25E219BCDFDA38A12 /* Pods-TutorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TutorApp/Pods-TutorApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FB1D3EBB510A3AC34877C6 /* Pods_TutorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				2F48419D1E86F25200283105 /* TutorApp */,
 				2F48419C1E86F25200283105 /* Products */,
+				432DEB06AB41BF46F76FF661 /* Pods */,
+				83F09BF73E7C4747BB8CC183 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		2F48419D1E86F25200283105 /* TutorApp */ = {
 			isa = PBXGroup;
 			children = (
+				2F4841B01E86F26C00283105 /* GoogleService-Info.plist */,
 				2F48419E1E86F25200283105 /* AppDelegate.swift */,
 				2F4841A01E86F25200283105 /* ViewController.swift */,
 				2F4841A21E86F25200283105 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = TutorApp;
 			sourceTree = "<group>";
 		};
+		432DEB06AB41BF46F76FF661 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D03123E25E219BCDFDA38A12 /* Pods-TutorApp.debug.xcconfig */,
+				04C1EE07E4E47618BBAAC78A /* Pods-TutorApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83F09BF73E7C4747BB8CC183 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95F43D0BE3F16B956D9E5584 /* Pods_TutorApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F4841AD1E86F25200283105 /* Build configuration list for PBXNativeTarget "TutorApp" */;
 			buildPhases = (
+				4338C003985E10F0C1F39402 /* [CP] Check Pods Manifest.lock */,
 				2F4841971E86F25200283105 /* Sources */,
 				2F4841981E86F25200283105 /* Frameworks */,
 				2F4841991E86F25200283105 /* Resources */,
+				890DEA68B8F1401995DD6D67 /* [CP] Embed Pods Frameworks */,
+				0D2DB87FFB0B1ACFC75749B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4841A91E86F25200283105 /* LaunchScreen.storyboard in Resources */,
+				2F4841B11E86F26C00283105 /* GoogleService-Info.plist in Resources */,
 				2F4841A61E86F25200283105 /* Assets.xcassets in Resources */,
 				2F4841A41E86F25200283105 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D2DB87FFB0B1ACFC75749B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TutorApp/Pods-TutorApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4338C003985E10F0C1F39402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		890DEA68B8F1401995DD6D67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TutorApp/Pods-TutorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F4841971E86F25200283105 /* Sources */ = {
@@ -258,6 +337,7 @@
 		};
 		2F4841AE1E86F25200283105 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03123E25E219BCDFDA38A12 /* Pods-TutorApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TutorApp/Info.plist;
@@ -270,6 +350,7 @@
 		};
 		2F4841AF1E86F25200283105 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C1EE07E4E47618BBAAC78A /* Pods-TutorApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TutorApp/Info.plist;
